@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import * as loader from './loader';
+import * as loader from './loader.js';
 
 const cliName = 'Patto CLI';
 const program = new Command()

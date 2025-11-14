@@ -8,7 +8,7 @@ import path from 'path';
 import { remove as removeDiacritics } from 'diacritics';
 import fetch from 'node-fetch';
 import AdmZip from 'adm-zip';
-import { isGitInstalled, toKebabCase } from '../utils';
+import { isGitInstalled, toKebabCase } from '../utils.js';
 
 async function downloadAndExtractZip(projectDir: string): Promise<void> {
     const zipUrl = 'https://github.com/HormigaDev/patto-bot-template/archive/refs/tags/v1.1.0.zip';
