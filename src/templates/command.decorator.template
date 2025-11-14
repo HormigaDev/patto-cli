@@ -1,0 +1,4 @@
+@Command({
+    name: '{{commandName}}',
+    description: '{{commandDescription}}',
+})

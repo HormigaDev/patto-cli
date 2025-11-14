@@ -1,0 +1,26 @@
+import { BaseCommand } from '@/core/structures/BaseCommand';
+import { BasePlugin } from '@/core/structures/BasePlugin';
+
+export class {{class}}Plugin extends BasePlugin {
+    async onBeforeRegister(
+        commandClass: new (...args: any[]) => BaseCommand,
+        commandJson: Record<string, any>,
+    ): Promise<any> {
+        // Qué hacer antes de registrar el comando en la API de Discord?
+    }
+
+    async onAfterRegister(
+        commandClass: new (...args: any[]) => BaseCommand,
+        registeredCommandJson: Record<string any>,
+    ): Promise<any> {
+        // Qué hacer después de registrar el comando en la API de Discord?
+    }
+
+    async onBeforeExecute(command: BaseCommand): Promise<boolean> {
+        // Qué hacer antes de ejecutar el comando?
+    }
+
+    async onAfterExecute(command: BaseCommand): Promise<any> {
+        // Qué hacer después de ejecutar el comando?
+    }
+}

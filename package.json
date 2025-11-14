@@ -1,34 +1,60 @@
 {
     "name": "patto-cli",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "type": "module",
     "bin": {
         "patto": "./dist/index.js"
     },
+    "files": [
+        "dist/**/*",
+        "README.md",
+        "LICENSE"
+    ],
     "repository": {
-        "url": "https://github.com/HormigaDev/patto-cli",
+        "url": "git+https://github.com/HormigaDev/patto-cli",
         "type": "git"
     },
-    "description": "Template profesional de CLI con Typescript",
+    "bugs": {
+        "url": "https://github.com/HormigaDev/patto-cli/issues"
+    },
+    "homepage": "https://github.com/HormigaDev/patto-cli#readme",
+    "description": "Herramienta de línea de comandos para trabajar con Patto Bot Template",
     "scripts": {
         "build": "tsc",
         "start": "tsx src/index.ts",
         "test": "vitest",
-        "test:watch": "vitest --watch"
+        "test:watch": "vitest --watch",
+        "test:coverage": "vitest run --coverage",
+        "prepublishOnly": "npm run build"
     },
-    "keywords": [],
+    "keywords": [
+        "cli",
+        "patto-cli",
+        "patto-bot-template",
+        "discord",
+        "discord-bot",
+        "discord-bot-template"
+    ],
     "author": {
         "email": "hormigadev7@gmail.com",
         "name": "HormigaDev"
     },
     "license": "MIT",
     "dependencies": {
+        "adm-zip": "^0.5.16",
         "chalk": "^5.6.2",
-        "commander": "^14.0.2"
+        "commander": "^14.0.2",
+        "diacritics": "^1.3.0",
+        "node-fetch": "^3.3.2",
+        "prompts": "^2.4.2"
     },
     "devDependencies": {
+        "@types/adm-zip": "^0.5.7",
         "@types/commander": "^2.12.0",
+        "@types/diacritics": "^1.3.3",
         "@types/node": "^24.10.1",
+        "@types/prompts": "^2.4.9",
+        "@vitest/coverage-v8": "^4.0.8",
         "tsx": "^4.20.6",
         "typescript": "^5.9.3",
         "vitest": "^4.0.8"

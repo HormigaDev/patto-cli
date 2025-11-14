@@ -1,1 +1,2 @@
-export { exampleCommand } from './commands/generate.command';
+export { initCommand } from './commands/init';
+export { generateCommand } from './commands/generate';

@@ -1,0 +1,5 @@
+PluginRegistry.register({
+    plugin: new {{class}}Plugin(),
+    scope: PluginScope.{{scope}},
+    folderPath: '{{folder}}',
+});

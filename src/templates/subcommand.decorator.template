@@ -1,0 +1,5 @@
+@Subcommand({
+    parent: '{{parent}}',
+    name: '{{name}}',
+    description: '{{description}}'
+})

@@ -1,0 +1,6 @@
+@SubcommandGroup({
+    parent: '{{parent}}',
+    name: '{{name}}',
+    subcommand: '{{subcommand}}',
+    description: '{{description}}'
+})

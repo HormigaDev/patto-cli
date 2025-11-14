@@ -1,0 +1,5 @@
+export class {{class}}Command extends {{parent}} {
+    async run(): Promise<void> {
+        // Tu código aquí
+    }
+}

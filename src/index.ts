@@ -3,10 +3,11 @@
 import { Command } from 'commander';
 import * as loader from './loader';
 
+const cliName = 'Patto CLI';
 const program = new Command()
-    .name('Patto CLI Template')
-    .version('1.0.0', '-V, --version, --versión')
-    .description('Template profesional de CLI con Typescript');
+    .name(cliName)
+    .version(`${cliName} v0.0.1`, '-v, --version')
+    .description('Herramienta de línea de comandos para trabajar con Patto Bot Template');
 
 Object.values(loader).forEach((command) => {
     program.addCommand(command);
