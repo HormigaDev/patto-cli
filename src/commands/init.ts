@@ -108,7 +108,7 @@ export const initCommand = new Command('init')
             if (hasGit) {
                 console.log(chalk.blue(`Clonando el repositorio en ${folderName}...`));
                 execSync(
-                    `git clone --quiet --branch v1.1.0 https://github.com/HormigaDev/patto-bot-template.git ${folderName}`,
+                    `git clone --quiet https://github.com/HormigaDev/patto-bot-template.git ${folderName}`,
                     { stdio: 'ignore' },
                 );
             } else {
