@@ -1,6 +1,6 @@
 {
     "name": "patto-cli",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "type": "module",
     "bin": {
         "patto": "./dist/index.js"
@@ -20,7 +20,7 @@
     "homepage": "https://github.com/HormigaDev/patto-cli#readme",
     "description": "Herramienta de línea de comandos para trabajar con Patto Bot Template",
     "scripts": {
-        "build": "tsc",
+        "build": "tsc && node ./scripts/copy-templates.js",
         "start": "tsx src/index.ts",
         "test": "vitest",
         "test:watch": "vitest --watch",
