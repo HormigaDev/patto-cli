@@ -11,13 +11,14 @@ export class {{class}}Plugin extends BasePlugin {
 
     async onAfterRegister(
         commandClass: new (...args: any[]) => BaseCommand,
-        registeredCommandJson: Record<string any>,
+        registeredCommandJson: Record<string, any>,
     ): Promise<any> {
         // Qué hacer después de registrar el comando en la API de Discord?
     }
 
     async onBeforeExecute(command: BaseCommand): Promise<boolean> {
         // Qué hacer antes de ejecutar el comando?
+        return true;
     }
 
     async onAfterExecute(command: BaseCommand): Promise<any> {
